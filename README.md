@@ -11,14 +11,15 @@ Steam-ML/
 │   ├── steamUsersDataset.json     # профили пользователей + их игры
 │   ├── steamGamesDataset.json     # информация об играх (отзывы, owners, tags и т.д.)
 │   ├── steamCrawlQueue.json       # очередь для краулинга SteamID
-│   └── simpleStatistics.txt       # простая статистика после краулинга
+│   └── simpleStatistics.txt       # базовая статистика после краулинга
 ├── notebooks/
 │   ├── clustering.ipynb
 │   ├── dataAnalysis.ipynb
-│   ├── main.ipynb
 │   ├── recommendationSystem.ipynb
+│   ├── requests.ipynb
 │   └── steamDataCollector.ipynb
 ├── .env                           # нужно создать
+├── .gitignore
 ├── requirements.txt
 └── README.md
 ```
@@ -34,7 +35,7 @@ Steam-ML/
    ```
 
 Ключ можно получить бесплатно на [Steam Web API](https://steamcommunity.com/dev/apikey).  
-ID можно получить поссылке профиля на [SteamID I/O](https://steamid.io/), нужен `steamID64`.
+ID можно получить по ссылке профиля на [SteamID I/O](https://steamid.io/), нужен `steamID64`.
 
 ## Собираемые данные
 
