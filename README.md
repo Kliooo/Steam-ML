@@ -9,11 +9,11 @@
 Steam-ML/
 ├── data/                              # собранные датасеты
 │   ├── steamUsersDataset.json         # профили пользователей + их игры
-│   ├── steamGamesDataset.json         # информация об играх (отзывы, owners, tags)
+│   ├── steamGamesDataset.json         # информация об играх (отзывы, owners, tags и т.д.)
 │   ├── friendsGraph.json              # граф дружбы между пользователями
 │   ├── linkPredictionDataset.csv      # обучающая выборка для Link Prediction
 │   ├── steamCrawlQueue.json           # очередь для краулинга SteamID
-│   └── simpleStatistics.txt           # статистика после краулинга
+│   └── simpleStatistics.txt           # базовая статистика после краулинга
 ├── notebooks/
 │   ├── steamDataCollector.ipynb       # сбор данных пользователей и игр
 │   ├── dataAnalysis.ipynb             # анализ и визуализация данных
@@ -35,12 +35,13 @@ pip install -r requirements.txt
 
 ## Создание файла среды (`.env`)
 
-Создайте файл `.env` в корне проекта:
+1. Создайте файл среды в корне проекта: `.env`
 
-```env
-STEAM_API_KEY=ваш_ключ_здесь
-STEAM_ID=ваш_steamid64_здесь
-```
+2. Откройте `.env` и укажите свой Steam Web API ключ и Steam ID:
+   ```env
+   STEAM_API_KEY=ваш_ключ_здесь
+   STEAM_ID=ваш_id_здесь
+   ```
 
 - Ключ можно получить на [Steam Web API](https://steamcommunity.com/dev/apikey)
 - SteamID64 можно узнать на [SteamID I/O](https://steamid.io/)
